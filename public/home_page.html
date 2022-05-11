@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Stock Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="icon.png" />
+
+</head>
+
+<body style="background-image: url(images/war.jpg);">
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                    <div class="wrap">
+                        <div class="login-wrap p-4 p-md-5">
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <h3 class="mb-4">Upadate the Inventory</h3>
+                                </div>
+                            </div>
+                            <form action=" /update" method="POST" class="signin-form">
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" id="iname" name="iname" required>
+                                    <label class="form-control-placeholder" for="username">Item Name</label>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" id="iid" name="iid" required>
+                                    <label class="form-control-placeholder" for="mail">Item ID</label>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="Number" class="form-control" id="quan" name="quan" required>
+                                    <label class="form-control-placeholder" for="phone">Quantity</label>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:rgb(1,210,142)" for="pass">Date of delivery</label>
+                                    <input id="ddate" type="date" class="form-control" name="ddate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:rgb(1,210,142)">ITEM CATEGORY</label>
+                                    <select class="form-control" id="im" name="im">
+                                        <option style="display:none"></option>
+                                        <option value="Books">Book</option>
+                                        <option value="Tools">Tools</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:rgb(1,210,142)">Quality of the stock</label>
+                                    <select class="form-control" id="qua" name="qua">
+                                        <option style="display:none"></option>
+                                        <option value="new">New</option>
+                                        <option value="almost-new">Almost New</option>
+                                        <option value="old">Old</option>
+                                        <option value="perfect">Perfect</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:rgb(1,210,142)">Status of the stock</label>
+                                    <select class="form-control" id="status" name="status">
+                                        <option style="display:none"></option>
+                                        <option value="Shipped">Shipped</option>
+                                        <option value="Ready to be shipped">Ready to be shipped</option>
+                                        <option value="Packaged">Packaged</option>
+                                        <option value="On Hold">On Hold</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit"
+                                        class="form-control btn btn-primary rounded submit px-3">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Signup Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form action=" /home_page.html" method="POST">
+        
+        <label for="quality">Quality of the stock</label>
+        <select name="quality" id="quality">
+            <option value="new">New</option>
+            <option value="almost-new">Almost New</option>
+            <option value="old">Old</option>
+            <option value="perfect">Perfect</option>
+        </select>
+        <br>
+        <label for="status">Status of the stock</label>
+        <select name="status" id="status">
+            <option value="ready">Ready To be shipped</option>
+            <option value="boxed">Packed/Boxed</option>
+            <option value="queued">Queued</option>
+            <option value="notready">On Hold</option>
+        </select>
+        <br>
+        <label for="date">Date of delivery</label>
+        <input type="date" class="box" id="date" name="date" placeholder="Date of delivery" required />
+        <br>
+        <br>
+        <label for="desc">Description of the item</label>
+
+        <textarea id="desc" name="desc" rows="4" cols="50">
+Write the description at the time of packaging.
+(Not a requeired field)
+        </textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit" />
+        <br>
+    </form>
+</body>
+
+</html>-->
